@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- no 1 -->
+    <p id="myParagraph">Hafizh Quran Mahir IT</p>
+    <!-- no 2 -->
+    <h1 id="myProject">Ini adalah text sekarang</h1>
+    <div id="hasil"></div>
+
+    <!-- no 3 -->
+    <ul id="myList"></ul>
+
+    <!-- no 4 -->
+    <input type="text" id="ukuranBaju" placeholder="Masukkan ukuran baju" />
+    <button onclick="myFunction()">Klik</button>
+    <button
+      onclick="console.log(document.getElementById ('ukuranBaju').value);"
+    >
+      klik saya
+    </button>
+
+    <!-- mo 5 -->
+    <input type="text" id="ukuranCelana" placeholder="Masukkan ukuran celana" />
+    <button onclick="hitung()">Tampilkan</button>
+    <ul id="nama"></ul>
+
+    <script>
+      // var elem = document.getElementById("myParagraph")
+      // console.dir(elem)
+      // console.log(elem.innerHTML)
+      // alert("Hafizh Quran Mahir IT")
+
+      // no 2
+      // var elem = document.getElementById('myProject')
+      // console.log(elem.innerText);
+      // elem.innerText = "Text yang lama sudah diganti dengan yang baru"
+
+      // let myNumber = 10;
+      // document.getElementById('hasil').innerText = myNumber;
+
+      // no 3
+      // let paragraphElement = document.createElement('li')
+
+      // paragraphElement.innerText = 'Makan Siang'
+
+      // document.getElementById('myList').appendChild(paragraphElement)
+
+      // no 4
+      // var ukuranBaju = document.getElementById('ukuranBaju')
+      // console.log(ukuranBaju);
+      //  function myFunction(){
+      //     console.log(document.getElementById ('ukuranBaju').value);
+
+      //  }
+
+      //  no 5
+      function hitung() {
+        // console.log(document.getElementById('ukuranCelana').value);
+        var input = document.getElementById("ukuranCelana").value;
+        console.log(input);
+
+        let paragraphElemets = document.createElement("li");
+        paragraphElemets.innerText = input;
+        document.getElementById("nama").appendChild(paragraphElemets);
+      }
+    </script>
+  </body>
+</html>
